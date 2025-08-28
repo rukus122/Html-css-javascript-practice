@@ -1,0 +1,77 @@
+body{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    padding: 100px; /* top right bottom left */
+    border-radius: 10px;
+    text-align: left;
+    width: 400px; /* Optional: set a fixed width */
+    min-height: 300px;
+    border-style: solid;
+    border-color: rgb(84, 164, 255);
+    border-width: 5px;
+    display: flex;
+
+    
+}
+#playAgainBtn {
+    padding:10px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#playAgainBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+#playAgainBtn:active {
+    transform: scale(0.95);
+}
+.header{
+    background-color: lightgray;
+    border-radius: 20px;
+    border: solid;
+    border-width: 3px;
+    padding: 3px;
+    height: 60px;
+    padding-left: 12px;
+    padding-right: 30px;
+    
+}
+.main{
+    margin-left: 20px;
+    text-align: center;
+    width: 100%;
+    
+}
+.sideBar{
+    border: solid;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+    margin-top: 77px;
+    margin-left: -160px;
+}
+.home-button{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    background-color: lightyellow;
+    padding: 10px 50px 10px 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.home-button:hover {
+    background-color: rgb(253, 253, 152);
+    cursor: pointer;
+    transform: scale(1.1);
+}

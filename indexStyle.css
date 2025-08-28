@@ -1,0 +1,118 @@
+body{
+    background-color: lightsalmon;
+
+}
+.img{
+    width: 200px;
+    height: 100px;
+    border: solid;
+    border-radius: 40px;
+    border-width: 6px;
+    border-color: lightgrey;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;    
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.playBtn{
+    background-color: lightgreen;
+    padding: 1px  8px 1px 8px;
+    border-radius: 10px;
+    
+}
+.playBtn:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+
+
+.guessing-container{
+    perspective: 1000px;
+    
+    width: 200px;
+    height: 120px;
+    
+}
+.guessing-card{
+    position: relative;
+    width:200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.guessing-front, .guessing-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+.guessing-front{
+    transform: royateY(0deg);
+}
+.guessing-back{
+    background-color: rgb(167, 81, 81);
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border: solid;
+    border-radius: 40px;
+    border-width: 6px;
+    border-color: lightgrey;
+    transform: rotateY(180deg);
+}
+.guessing-card:hover{
+    transform: rotateY(180deg);
+
+}
+
+
+
+.coin-flip-container{
+    perspective: 1000px;
+    margin-top: 50px;
+    
+}
+.coin-flip-card{
+    position: relative;
+    width:200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+   
+  
+}
+.coin-front, .coin-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    backface-visibility: hidden;
+}
+.coin-front{
+    transform: royateY(0deg);
+}
+.coin-back{
+    background-color: rgb(167, 81, 81);
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border: solid;
+    border-radius: 40px;
+    border-width: 6px;
+    border-color: lightgrey;
+    transform: rotateY(180deg);
+}
+.coin-flip-card:hover{
+    transform: rotateY(180deg);
+
+}
